@@ -52,9 +52,6 @@ npm run test
 
 ### Despliegue
 
-Tener en cuenta instalar `serverless` de manera global o usar `npx`.
-También deber tener un usuario con los permisos correspondientes. [IAM](https://docs.aws.amazon.com/es_es/IAM/latest/UserGuide/introduction.html)
-
 ```sh
 sls deploy
 ```

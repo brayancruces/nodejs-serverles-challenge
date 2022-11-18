@@ -36,7 +36,6 @@ npm start
 
 ### Tests
 
-Debes tener en cuenta que el servidor esté funcionando
 
 ```sh
 npm run test

@@ -1,6 +1,6 @@
 # NodeJS Serverless Challenge
 
-Challenge NodeJS Serverless utiliando la API de NodeJS
+Challenge NodeJS Serverless utilizando la API de Star Wars API
 
 Stack: AWS Lambda + NodeJS + Typescript + DynamoDB
 

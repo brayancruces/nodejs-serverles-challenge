@@ -1,0 +1,25 @@
+{
+  "extends": "./tsconfig.paths.json",
+  "compilerOptions": {
+    "lib": ["ES2019"],
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "esModuleInterop": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "target": "ES2019",
+    "outDir": "lib"
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": [
+    "node_modules/**/*",
+    ".serverless/**/*",
+    ".dynamodb/**/*",
+    ".webpack/**/*",
+    "_warmup/**/*",
+    ".vscode/**/*",
+    "**/*.spec.ts"
+  ]
+}

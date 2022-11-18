@@ -1,0 +1,21 @@
+[
+  {
+    "id": "9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d",
+    "nombre": "Luke Skywalker",
+    "genero": "Male",
+    "peliculas": "https://swapi.py4e.com/api/films/1/",
+    "color_ojo": "azul",
+    "color_cabello": "Marrón",
+    "color_piel": "Marrón",
+    "altura": "172",
+    "peso": "77",
+    "planeta_natal": "https://swapi.py4e.com/api/planets/1/",
+    "especies": "https://swapi.py4e.com/api/species/1/",
+    "naves_estelares": "https://swapi.py4e.com/api/starships/12/",
+    "vehiculos": "https://swapi.py4e.com/api/vehicles/14/",
+    "url": "https://swapi.py4e.com/api/people/1/",
+    "fecha_nacimiento": "10/10/1990",
+    "fecha_creacion": "2021-01-10T02:26:01.330Z",
+    "fecha_edicion": "2021-01-10T02:26:01.330Z"
+  }
+]

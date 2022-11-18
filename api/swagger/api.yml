@@ -1,0 +1,126 @@
+swagger: '2.0'
+info:
+  description: 'Star Wars Serverless NodeJS'
+  version: '1.0.0'
+  title: 'Star Wars'
+  termsOfService: 'http://swagger.io/terms/'
+  contact:
+    email: 'brayan2259@gmail.com'
+  license:
+    name: 'Apache 2.0'
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+host: 'star-wars.swagger.io'
+basePath: '/v2'
+tags:
+  - name: 'people'
+    description: 'People'
+    externalDocs:
+      description: 'Encuentra más en la documentación oficial de Star Wars API Oficial'
+      url: 'https://swapi.py4e.com/documentation#people'
+schemes:
+  - 'https'
+  - 'http'
+paths:
+  /dev/people:
+    post:
+      tags:
+        - 'people'
+      summary: 'Crear un people'
+      description: ''
+      operationId: 'create'
+      consumes:
+        - 'application/json'
+      produces:
+        - 'application/json'
+      parameters:
+        - in: 'body'
+          name: 'body'
+          description: 'objecto modelo de people'
+          required: true
+          schema:
+            $ref: '#/definitions/People'
+      responses:
+        '200':
+          description: 'People creado'
+          schema:
+            $ref: '#/definitions/ID'
+  /dev/people/{id}:
+    get:
+      tags:
+        - 'people'
+      summary: 'Obtén un people por ID'
+      description: 'Retorna un people'
+      operationId: 'read'
+      produces:
+        - 'application/json'
+      parameters:
+        - name: 'id'
+          in: 'path'
+          description: 'ID de people a retornar'
+          required: true
+          type: 'integer'
+          format: 'int64'
+      responses:
+        '200':
+          description: 'Operación éxitosa'
+          schema:
+            $ref: '#/definitions/People'
+        '400':
+          description: 'Bad Request'
+        '404':
+          description: 'People no encontrado'
+definitions:
+  People:
+    type: 'object'
+    required:
+      - 'nombre'
+      - 'genero'
+      - 'peliculas'
+      - 'color_ojo'
+      - 'color_cabello'
+      - 'color_piel'
+      - 'altura'
+      - 'peso'
+      - 'planeta_natal'
+      - 'especies'
+      - 'naves_estelares'
+      - 'vehiculos'
+      - 'url'
+      - 'fecha_nacimiento'
+    properties:
+      id:
+        type: 'string'
+      nombre:
+        type: 'string'
+      genero:
+        type: 'string'
+      peliculas:
+        type: 'string'
+      color_ojo:
+        type: 'string'
+      color_cabello:
+        type: 'string'
+      color_piel:
+        type: 'string'
+      altura:
+        type: 'string'
+      peso:
+        type: 'string'
+      planeta_natal:
+        type: 'string'
+      especies:
+        type: 'string'
+      naves_estelares:
+        type: 'string'
+      vehiculos:
+        type: 'string'
+      url:
+        type: 'string'
+      fecha_nacimiento:
+        type: 'string'
+  ID:
+    type: 'object'
+    properties:
+      id:
+        type: 'string'
+
